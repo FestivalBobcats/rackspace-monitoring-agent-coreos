@@ -10,4 +10,4 @@ RUN apt-get update && apt-get -y install libffi-dev libjpeg8-dev libssl-dev libx
 RUN pip install rackspace-monitoring-cli==0.7.2 requests
 
 # Install script
-COPY check_prometheus.py /usr/lib/rackspace-monitoring-agent/plugins/
+COPY *.py /usr/lib/rackspace-monitoring-agent/plugins/
