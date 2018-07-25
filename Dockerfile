@@ -8,6 +8,7 @@ RUN apt-get update && apt-get -y install libffi-dev libjpeg8-dev libssl-dev libx
 
 # Install Python
 RUN pip install rackspace-monitoring-cli==0.7.2 requests
+RUN pip install python-keystoneclient==3.17.0
 
 # Install script
 COPY *.py /usr/lib/rackspace-monitoring-agent/plugins/
